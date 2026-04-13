@@ -1,0 +1,5 @@
+#Quando em nossa classe recebe dados reais ela se torna um objeto, e necessario instanciar a classe gerenerica, que e pegar uma copia da raiz com dados  
+#aqui foi feita uma instancia, onde pegamos nossa classe e colocamos dados nela, toda a vez que instaciar e necessario realizar uma copia usando uma variavel antes como no exemplo cliente1
+'''cliente1 = Cliente("Israel", 0000000, "Corrente", 4, 403, 0)
+
+print(cliente1)'''
