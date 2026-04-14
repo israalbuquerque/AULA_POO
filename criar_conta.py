@@ -17,7 +17,7 @@ class Criar_conta:
         dados_clientes = {
             "nome_cliente" : [self.cliente.nome_cliente],
             "cpf_cliente" : [self.cliente.cpf_cliente],
-            "tipo_conta" : [self.cliente.numero_conta],
+            "tipo_conta" : [self.cliente.tipo_conta],
             "numero_conta": [self.cliente.numero_conta],
             "agencia" : [self.cliente.agencia],
             "extrato_bancario" : [self.cliente.extrato],
