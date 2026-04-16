@@ -2,6 +2,7 @@
 from Cliente import Cliente
 from criar_conta import Criar_conta
 from adicionar_conta import adicionar_conta #nome do arquivo primeiro e depois o nome da classe daquele arquivo
+from acessar_conta import Acessar_conta
 import pandas as pd
 import os
 
@@ -50,5 +51,17 @@ if escolha == 1:
 
 elif escolha == 2:
     print("Opcao 2 selecionada")
+
+    #validar se o cpf informado e o  numero_conta sao os mesmos
+
+    #aqui foi passados os inputs para que os usuarios digitem
+    cpf_cliente = str(input("CPF: "))
+    numero_conta = str(input("Digite o numero conta: "))
+
+    #
+    acesso = Acessar_conta(cpf_cliente, numero_conta)
+    acesso.validar_banco(caminho_excel)
+
+    
 
 #variaveis, paremetros e atributos 
