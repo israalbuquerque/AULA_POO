@@ -29,7 +29,7 @@ if escolha == 1:
         df = pd.read_excel(caminho_excel)
 
         #instanciando o adicionar conta
-        adicionar = adicionar_conta(nome_cliente, cpf_cliente, tipo_conta)#passamos por parametro somente os dados que serao digitados pelo usuario
+        adicionar = adicionar_conta(nome_cliente, cpf_cliente, tipo_conta,)#passamos por parametro somente os dados que serao digitados pelo usuario
 
         #chamando o funcao aidionar que esta dentro da classe Adicionar_conta
         novo_dado = adicionar.adicionar(df)
@@ -45,6 +45,8 @@ if escolha == 1:
     df  = pd.concat([df, novo_dado], ignore_index  = True)#aqui recebemos o return o resultado do df = pd.DataFrame() e nosso dicionario que esta dados_clientes na criar_conta
     
     df.to_excel(caminho_excel, index = False)#salvamos o excel
+
+    print(novo_dado)
 
 elif escolha == 2:
     print("Opcao 2 selecionada")
